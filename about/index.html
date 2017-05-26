@@ -56,7 +56,7 @@
     <meta name="apple-mobile-web-app-title" content="Qiao&#39;s Meeting Room">
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yuqiaozeng.com">
+    <meta property="og:url" content="http://yuqiaozeng.club">
     <meta property="og:type" content="blog">
     <meta property="og:title" content="PERSONAL INFORMATION | Qiao&#39;s Meeting Room">
     <meta property="og:description" content="This is personal blog website.">
@@ -283,6 +283,15 @@
 
     <!-- Qrcode -->
     
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+            <i class="material-icons" role="presentation">devices other</i>
+            <span class="visuallyhidden">devices other</span>
+        </button>
+        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+            <li class="mdl-menu__item">Read this article on other device</li>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAAB4klEQVR42u3awW7DIBAE0Pz/T7fXSpXdGbCbGJ5Pkao6PA4b2NnX1xLPCwMDAwMDAwPjYxiv+Pn9X4df8OOv+dvqNWBgYGzG+KO0BYyjpbfsYg0YGBhbMo4K3PnntijnW3C+ERgYGBjt0u87SmJgYGDMFNyji+h924SBgYFxR/vs/D1vu4tjYGA8kJE35e/7/K/5BgYGxqMY9YjDBK8t9DfOjGBgYDyKkRe+/JA3E3mefy8GBsaejKSwni+xDQDaI2B0icXAwFia0caTSZFttyAvshgYGHsy7ruCjgUDxXgZBgbGNowkhmxLcHLEbA+mGBgYGFeNR+TbMT+OhoGBsSdjvly20UI+2DH4u4GBgbEcY2wgrG2xXRU2YGBg7Mloy2i+uLEhsMt+NzAwMBZitEuZiQfawYvBuzgGBsZCjOR4Nz+0mocBl83hYmBgLMqYabTlYUMbLWBgYGDkLbN2zCJBttEmBgbGboyZFthVyMEQFAMDYxtG2/bKm3RjAxxTl1gMDIylGW2RbWOA/D158w4DA2NPxsxAWB5bzhR6DAwMjJbRFtB8sOyyriEGBsbGjLEC2oYEF0SYGBgYyzHyq2m79HY4AwMDA2MmGHjX4AUGBsbOjOc+GBgYGBgYGBhvfb4B32PKJyuz8XsAAAAASUVORK5CYII=">
+        </ul>
+    
 
     <!-- Tags (bookmark) -->
     
@@ -308,7 +317,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=PERSONAL INFORMATION&url=http://yuqiaozeng.com//about/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=PERSONAL INFORMATION&url=http://yuqiaozeng.club//about/index.html&pic=&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 Share to Weibo
             </li>
@@ -317,10 +326,16 @@
 
     <!-- Share Twitter -->
     
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=PERSONAL INFORMATION&url=http://yuqiaozeng.club//about/index.html&via=Yuqiao(Qiao) Zeng" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Twitter
+            </li>
+        </a>
+    
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yuqiaozeng.com//about/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yuqiaozeng.club//about/index.html" target="_blank">
             <li class="mdl-menu__item">
                 Share to Facebook
             </li>
@@ -328,6 +343,12 @@
     
 
     <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yuqiaozeng.club//about/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Google+
+            </li>
+        </a>
     
 
     <!-- Share LinkedIn -->
@@ -365,6 +386,97 @@
 
 
 
+
+    <!-- 使用 DISQUS_CLICK -->
+    <div id="disqus-comment">
+        <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+        .ripple-container {
+        }
+        .ripple-container .ripple{
+            background-color: rgba(255,255,255,0.4);
+            animation: ripple 2s forwards cubic-bezier(0, 0, 0.2, 1);
+        }
+        @keyframes ripple {
+            0% {
+                transform: scale(0);
+                opacity: 1;
+            }
+            80% {
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #50A0FC;
+            text-shadow: 0
+        }
+</style>
+	
+<!-- add data-ripple attribute -->
+<div class="btn_click_load"> 
+    <button class="disqus_click_btn">Read Comments (Be sure disq.us, disquscdn.com and disqus.com can load properly)</button>
+</div>
+	
+<script>
+    // add effect to elements
+    Array.prototype.forEach.call(document.querySelectorAll('[data-ripple]'), function(element){
+        // find all elements and attach effect
+        new RippleEffect(element); // element is instance of javascript element node
+    });
+</script>
+
+<script>
+    var disqus_config = function () {
+        this.page.url = 'http://yuqiaozeng.club/about/index.html';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yuqiaozeng.club/about/index.html'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//yuqiaozeng-club.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+  	
+
+    </div>
+    <style>
+        #disqus-comment{
+            background-color: #eee;
+            padding: 2pc;
+        }
+    </style>
 
 
                 
@@ -482,7 +594,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/DailyLife/">DailyLife<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/DailyLife/">DailyLife<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/TEST/">TEST<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         

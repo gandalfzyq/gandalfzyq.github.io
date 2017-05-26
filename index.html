@@ -54,7 +54,7 @@
     <meta name="apple-mobile-web-app-title" content="Qiao&#39;s Meeting Room">
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yuqiaozeng.com">
+    <meta property="og:url" content="http://yuqiaozeng.club">
     <meta property="og:type" content="blog">
     <meta property="og:title" content="Qiao&#39;s Meeting Room">
     <meta property="og:description" content="This is personal blog website.">
@@ -254,30 +254,29 @@
 
     <!-- Search -->
     
-    <!-- Google -->
+
+
+
+
+    <!-- Local -->
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable" method="post" action="">
         <label id="search-label" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent mdl-shadow--4dp" for="search">
             <i class="material-icons mdl-color-text--white" role="presentation">search</i>
         </label>
 
-        <form autocomplete="off" id="search-form" method="get" action="//google.com/search" accept-charset="UTF-8" class="mdl-textfield__expandable-holder" target="_blank">
-            <input class="mdl-textfield__input search-input" type="search" name="q" id="search" placeholder="">
+        <form autocomplete="off" id="search-form" class="mdl-textfield__expandable-holder">
+            <input type="text" id="search" class="form-control mdl-textfield__input search-input" name="q" results="0" placeholder=""/>
             <label id="search-form-label" class="mdl-textfield__label" for="search"></label>
-
-            <input type="hidden" name="sitesearch" value="http://yuqiaozeng.com">
         </form>
     </div>
-
-
-
-
+    <div id="local-search-result"></div>
 
 
 
     <!-- LOGO -->
     <div class="something-else-logo mdl-color--white mdl-color-text--grey-600">
         <a href="#">
-            <img src="/img/logo.png" alt="logo" />
+            <img src="/img/yuqiao_headicon.jpeg" alt="logo" />
         </a>
     </div>
 
@@ -321,7 +320,7 @@
             
 
             
-                <a class="index_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Qiao&#39;s Meeting Room&url=http://yuqiaozeng.com/&pic=&searchPic=false&style=simple" target="_blank">
+                <a class="index_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Qiao&#39;s Meeting Room&url=http://yuqiaozeng.club/&pic=&searchPic=false&style=simple" target="_blank">
                     <li class="mdl-menu__item mdl-js-ripple-effect">
                         Share to Weibo
                     </li>
@@ -329,15 +328,27 @@
             
 
             
+                <a class="index_share-link" href="https://twitter.com/intent/tweet?text=Qiao&#39;s Meeting Room&url=http://yuqiaozeng.club/&via=Yuqiao(Qiao) Zeng" target="_blank">
+                    <li class="mdl-menu__item mdl-js-ripple-effect">
+                        Share to Twitter
+                    </li>
+                </a>
+            
 
             
-                <a class="index_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yuqiaozeng.com//index.html" target="_blank">
+                <a class="index_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yuqiaozeng.club//index.html" target="_blank">
                     <li class="mdl-menu__item mdl-js-ripple-effect">
                         Share to Facebook
                     </li>
                 </a>
             
 
+            
+                <a class="index_share-link" href="https://plus.google.com/share?url=http://yuqiaozeng.club/" target="_blank">
+                    <li class="mdl-menu__item mdl-js-ripple-effect">
+                        Share to Google+
+                    </li>
+                </a>
             
 
             
@@ -374,7 +385,7 @@
     <!-- Post Excerpt -->
     <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
         
-            Because of the request from the ETC that every student has to get a person...
+            
         
         &nbsp;&nbsp;&nbsp;
         <span>
@@ -455,7 +466,7 @@
         <div id="post_entry-right-info">
             <!-- Category -->
             <span class="post_entry-category">
-                
+                <a class="post_category-link" href="/categories/TEST/">TEST</a>
             </span>
 
             
@@ -591,7 +602,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/DailyLife/">DailyLife<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/DailyLife/">DailyLife<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/TEST/">TEST<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -813,6 +824,106 @@ It will not impact the appearance and can give developers a lot of support :)
     
 
     <!-- Local Search-->
+    
+        <script>
+    var searchFunc = function(path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: 'xml',
+            success: function( xmlResponse ) {
+                // get the contents from search data
+                var datas = $( 'entry', xmlResponse ).map(function() {
+                    return {
+                        title: $( 'title', this ).text(),
+                        content: $('content',this).text(),
+                        url: $( 'url' , this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function() {
+                    var str='<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = '';
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function(data) {
+                        var isMatch = true;
+                        var content_index = [];
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g,'').toLowerCase();
+                        var data_url = data.url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if(data_title !== '' && data_content !== '') {
+                            keywords.forEach(function(keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if( index_title < 0 && index_content < 0 ) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += '<li><a href="'+ data_url +'" class="search-result-title" target="_blank">'+ data_title;
+                            var content = data.content.trim().replace(/<[^>]+>/g, '');
+                            if (first_occur >= 0) {
+                                // cut out characters
+                                var start = first_occur - 6;
+                                var end = first_occur + 6;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 10;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function(keyword) {
+                                    var regS = new RegExp(keyword, 'gi');
+                                    match_content = match_content.replace(regS, '<em class="search-keyword">'+keyword+'</em>');
+                                })
+                                str += '<p class="search-result">' + match_content + '...</p>' +'</a>';
+                            }
+                        }
+                    });
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    }
+</script>
+
+
+        <script>
+            var inputArea = document.querySelector('#search');
+            var getSearchFile = function() {
+                var path = 'search.xml';
+                searchFunc(path, 'search', 'local-search-result');
+            }
+
+            if(inputArea) {
+                inputArea.onfocus = function() {
+                    getSearchFile();
+                }
+            }
+        </script>
     
 
 

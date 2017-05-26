@@ -32,7 +32,7 @@
     <meta name="theme-color" content="#A3F7B5">
     <meta name="author" content="Yuqiao(Qiao) Zeng">
     <meta name="description" content="This is personal blog website.">
-    <meta name="keywords" content="null">
+    <meta name="keywords" content="null,TEST">
 
     <!-- Favicons -->
     <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
@@ -56,11 +56,11 @@
     <meta name="apple-mobile-web-app-title" content="Qiao&#39;s Meeting Room">
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yuqiaozeng.com">
+    <meta property="og:url" content="http://yuqiaozeng.club">
     <meta property="og:type" content="blog">
     <meta property="og:title" content="Hello World | Qiao&#39;s Meeting Room">
     <meta property="og:description" content="This is personal blog website.">
-    
+    <meta property="og:article:tag" content="TEST"> 
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
@@ -318,6 +318,15 @@
 
     <!-- Qrcode -->
     
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+            <i class="material-icons" role="presentation">devices other</i>
+            <span class="visuallyhidden">devices other</span>
+        </button>
+        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+            <li class="mdl-menu__item">Read this article on other device</li>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACVklEQVR42u3a0W7CMAwF0P7/T2+vkybYtZ2kHTp5QqKUnCIl5jrX10ePCw8PDw8PDw8P72G8Kx6/PxV92Y8rq/dpzg0PDw/vCK83xfwrk/u8vz6ZGx4eHt553qspVnnJNjC5/o9P4eHh4T2YN1q+g00FDw8P7zN4r5b1vCDOAw48PDy85/N6E80xPdLRrAUPDw8v5uVNpvOvj/b38PDw8AJedSTldW+TWDXw8PDwdvMmRwfmy3r1CEJ0QAEPDw9vM29VmJvfoddyyzcVPDw8vN283kJcXcTXlul4eHh49/KSQrm6WM8j4F6Ai4eHh3eGVy1qe9TqZhAxev09PDw8vCO8vFDuFd+TwhoPDw/vabxeayqZeg8Q/QB4eHh4m3n5QYFeGNGLbqstNDw8PLyTvLy1X30E1TZbdQ54eHh49/LKB5viZb13qCs/yoCHh4f3BF61nZ+Dc+r7x4qHh4f3HF4eQORBbfWA16SFhoeHh3eSV12y89BhEkA0Nw88PDy847zqoagEnC/61Vnh4eHh3ctLYoVJ0yu/Qx5z4OHh4d3LS8LZ/EBAskn0ivtRGIGHh4e3NMZ9v4gn7fxq478aZ0QbEh4eHt5mXnXkRwp2BMTRHfDw8PA28654JHFAL36tBhbLSmo8PDy8AS/fDKoxxNpSe0FKjYeHh7eUV/7bv6hxNSnTo5IaDw8P7zG86rt5mZ68i4eHh/cfefOGVr5tjGJcPDw8vG286tJfbXHlsewo/sDDw8M7wptHAL0yujqT6KHj4eHhbeZ93sDDw8PDw8PDw3vA+AbdjNM3gr0fVQAAAABJRU5ErkJggg==">
+        </ul>
+    
 
     <!-- Tags (bookmark) -->
     
@@ -327,7 +336,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        
+        <a class="post_tag-link" href="/tags/TEST/">TEST</a>
     </ul>
     
 
@@ -343,7 +352,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Hello World&url=http://yuqiaozeng.com//2010/01/01/hello-world/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Hello World&url=http://yuqiaozeng.club//2010/01/01/hello-world/index.html&pic=&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 Share to Weibo
             </li>
@@ -352,10 +361,16 @@
 
     <!-- Share Twitter -->
     
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Hello World&url=http://yuqiaozeng.club//2010/01/01/hello-world/index.html&via=Yuqiao(Qiao) Zeng" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Twitter
+            </li>
+        </a>
+    
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yuqiaozeng.com//2010/01/01/hello-world/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yuqiaozeng.club//2010/01/01/hello-world/index.html" target="_blank">
             <li class="mdl-menu__item">
                 Share to Facebook
             </li>
@@ -363,6 +378,12 @@
     
 
     <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yuqiaozeng.club//2010/01/01/hello-world/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Google+
+            </li>
+        </a>
     
 
     <!-- Share LinkedIn -->
@@ -408,6 +429,97 @@
 
 
 
+
+    <!-- 使用 DISQUS_CLICK -->
+    <div id="disqus-comment">
+        <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+        .ripple-container {
+        }
+        .ripple-container .ripple{
+            background-color: rgba(255,255,255,0.4);
+            animation: ripple 2s forwards cubic-bezier(0, 0, 0.2, 1);
+        }
+        @keyframes ripple {
+            0% {
+                transform: scale(0);
+                opacity: 1;
+            }
+            80% {
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #50A0FC;
+            text-shadow: 0
+        }
+</style>
+	
+<!-- add data-ripple attribute -->
+<div class="btn_click_load"> 
+    <button class="disqus_click_btn">Read Comments (Be sure disq.us, disquscdn.com and disqus.com can load properly)</button>
+</div>
+	
+<script>
+    // add effect to elements
+    Array.prototype.forEach.call(document.querySelectorAll('[data-ripple]'), function(element){
+        // find all elements and attach effect
+        new RippleEffect(element); // element is instance of javascript element node
+    });
+</script>
+
+<script>
+    var disqus_config = function () {
+        this.page.url = 'http://yuqiaozeng.club/2010/01/01/hello-world/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yuqiaozeng.club/2010/01/01/hello-world/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//yuqiaozeng-club.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+  	
+
+    </div>
+    <style>
+        #disqus-comment{
+            background-color: #eee;
+            padding: 2pc;
+        }
+    </style>
 
 
                 
@@ -533,7 +645,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/DailyLife/">DailyLife<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/DailyLife/">DailyLife<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/TEST/">TEST<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
