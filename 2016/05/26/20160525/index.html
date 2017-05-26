@@ -10,7 +10,7 @@
     
     <title>
         
-            Categories: TEST | 
+            Starting My Blog | 
         
         Qiao&#39;s Meeting Room
     </title>
@@ -32,7 +32,7 @@
     <meta name="theme-color" content="#A3F7B5">
     <meta name="author" content="Yuqiao(Qiao) Zeng">
     <meta name="description" content="This is personal blog website.">
-    <meta name="keywords" content="null">
+    <meta name="keywords" content="null,ETC,tittle-tattle">
 
     <!-- Favicons -->
     <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
@@ -58,9 +58,9 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://yuqiaozeng.club">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Categories: TEST | Qiao&#39;s Meeting Room">
+    <meta property="og:title" content="Starting My Blog | Qiao&#39;s Meeting Room">
     <meta property="og:description" content="This is personal blog website.">
-    
+    <meta property="og:article:tag" content="ETC"> <meta property="og:article:tag" content="tittle-tattle"> 
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
@@ -221,96 +221,316 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
     
-
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--3dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2010/01/01/20100101/">Hello World</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            Welcome to Hexo
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2010/01/01/20100101/" target="_self">Continue Reading</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/yuqiao_headicon.jpeg" width="44px" height="44px" alt="Yuqiao(Qiao) Zeng's avatar">
-            </div>
-            <div>
-                <strong>Yuqiao(Qiao) Zeng</strong>
-                <span>Jan 01, 2010</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                <a class="post_category-link" href="/categories/TEST/">TEST</a>
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
             </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
+        </a>
     </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Why-Starting-Blog"><span class="post-toc-number">1.</span> <span class="post-toc-text">Why Starting Blog?</span></a></li></ol>
+
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://c1.staticflickr.com/8/7341/9710165940_ea69b2f3ac_k.jpg)">
+    
+            <p class="article-headline-p">
+                Starting My Blog
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/yuqiao_headicon.jpeg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Yuqiao(Qiao) Zeng</strong>
+        <span>May 25, 2016</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+            <i class="material-icons" role="presentation">devices other</i>
+            <span class="visuallyhidden">devices other</span>
+        </button>
+        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+            <li class="mdl-menu__item">Read this article on other device</li>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACaElEQVR42u3aQW7DMAwEwPz/0+21QBF3SUqyG4xPQeJEHh9MZcnX10cfLzw8PDw8PDw8vIfxXvHx7vyf7/9+fb3K708n14aHh4d3kvfHozZg5LwqO782PDw8vPO8fJlqIbmm5sUm+n08PDy8h/GSTe017N2ZeHh4eJ/Km1x6vvnGw8PD+y+8/A9/vjnOz0nw27MWPDw8vJjXCxfOvL6hv4eHh4d3ySuPNOXLBIFFtURtnynDw8PDC3jXw08JoDpwkIQUeVTRzFrw8PDwBrz8a/n2t1dOokuvxrh4eHh4R3jVuDa5oElzq1qc8PDw8Hbz5s2tyRBA77vNfwx4eHh4i3i9FlSvoVXFVDfTeHh4eCd5+TJ5e6zX6Mp/AQ8PD+9eXnXANA8LqmME+ThCYTICDw8PbymvGhPkj+kqI18XDw8P715eEhP0oor8pvTWxcPDw7uLt2rsqTdWlWzZq+UHDw8P7wyv2rKq3oKcNGmS4eHh4Z3n9R7l+VY7iYMXbNbx8PDwNvOSGKJ6KZNf7m2+8fDw8E7y8lbTZLBgVZyRbK/x8PDwdvOqrf0ktugNV1U332/xeHh4eEd410Ht9YO+OrDVi2gXhxF4eHh4A97kb3+V3WuM5WUJDw8P7wyvekxKSG+sqlx48PDw8DbzVsUB1fIwaYnh4eHhPYGXF4N8yfym5IUhull4eHh4B3nVRlcSSewoOc2hKzw8PLybeNWAdd5aq4YjeHh4eM/k5QtPqEnDbEthwMPDw1uacyaP9epYVXIrcyoeHh7eGd4kMshbXEnx6L2Ph4eHd5L3eQceHh4eHh4eHt4Djm/TcIaSGmePewAAAABJRU5ErkJggg==">
+        </ul>
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/ETC/">ETC</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/tittle-tattle/">tittle-tattle</a>
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Starting My Blog&url=http://yuqiaozeng.club//2016/05/26/20160525/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Weibo
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Starting My Blog&url=http://yuqiaozeng.club//2016/05/26/20160525/index.html&via=Yuqiao(Qiao) Zeng" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yuqiaozeng.club//2016/05/26/20160525/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yuqiaozeng.club//2016/05/26/20160525/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
 </div>
 
-            
-            
-        
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h2 id="Why-Starting-Blog"><a href="#Why-Starting-Blog" class="headerlink" title="Why Starting Blog?"></a>Why Starting Blog?</h2><p>Because of the request from the ETC that every student has to get a personal website, I have got something like this. The theme <a href="https://hexo.io/" target="_blank" rel="external">Material</a> is so elegant!<br>From today, I will formaly start writing my blog. Hope everything goes just fine.</p>
+
     
 
     
+</div>
 
-    
-        <script>
-    var randomNum;
 
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
+                
 
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-    $('.post_thumbnail-random').addClass('lazy');
+                <!-- Post Comments -->
+                
+                    
 
-        locatePost = locatePost.next();
-    }
+
+
+
+
+
+    <!-- 使用 DISQUS_CLICK -->
+    <div id="disqus-comment">
+        <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+        .ripple-container {
+        }
+        .ripple-container .ripple{
+            background-color: rgba(255,255,255,0.4);
+            animation: ripple 2s forwards cubic-bezier(0, 0, 0.2, 1);
+        }
+        @keyframes ripple {
+            0% {
+                transform: scale(0);
+                opacity: 1;
+            }
+            80% {
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #50A0FC;
+            text-shadow: 0
+        }
+</style>
+	
+<!-- add data-ripple attribute -->
+<div class="btn_click_load"> 
+    <button class="disqus_click_btn">Read Comments (Be sure disq.us, disquscdn.com and disqus.com can load properly)</button>
+</div>
+	
+<script>
+    // add effect to elements
+    Array.prototype.forEach.call(document.querySelectorAll('[data-ripple]'), function(element){
+        // find all elements and attach effect
+        new RippleEffect(element); // element is instance of javascript element node
+    });
 </script>
 
+<script>
+    var disqus_config = function () {
+        this.page.url = 'http://yuqiaozeng.club/2016/05/26/20160525/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yuqiaozeng.club/2016/05/26/20160525/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//yuqiaozeng-club.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+  	
+
+    </div>
+    <style>
+        #disqus-comment{
+            background-color: #eee;
+            padding: 2pc;
+        }
+    </style>
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
     
-</div>
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2010/01/01/20100101/" id="post_nav-older" class="next-content">
+            Older
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     

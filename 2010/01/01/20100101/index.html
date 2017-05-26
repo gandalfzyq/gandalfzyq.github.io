@@ -10,7 +10,7 @@
     
     <title>
         
-            Categories: TEST | 
+            Hello World | 
         
         Qiao&#39;s Meeting Room
     </title>
@@ -32,7 +32,7 @@
     <meta name="theme-color" content="#A3F7B5">
     <meta name="author" content="Yuqiao(Qiao) Zeng">
     <meta name="description" content="This is personal blog website.">
-    <meta name="keywords" content="null">
+    <meta name="keywords" content="null,TEST">
 
     <!-- Favicons -->
     <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
@@ -58,9 +58,9 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://yuqiaozeng.club">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Categories: TEST | Qiao&#39;s Meeting Room">
+    <meta property="og:title" content="Hello World | Qiao&#39;s Meeting Room">
     <meta property="og:description" content="This is personal blog website.">
-    
+    <meta property="og:article:tag" content="TEST"> 
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
@@ -221,96 +221,333 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
     
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--3dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Quick-Start"><span class="post-toc-number">1.</span> <span class="post-toc-text">Quick Start</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Create-a-new-post"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Create a new post</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Run-server"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Run server</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Generate-static-files"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">Generate static files</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Deploy-to-remote-sites"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script>
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2010/01/01/20100101/">Hello World</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            Welcome to Hexo
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2010/01/01/20100101/" target="_self">Continue Reading</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/yuqiao_headicon.jpeg" width="44px" height="44px" alt="Yuqiao(Qiao) Zeng's avatar">
-            </div>
-            <div>
-                <strong>Yuqiao(Qiao) Zeng</strong>
-                <span>Jan 01, 2010</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                <a class="post_category-link" href="/categories/TEST/">TEST</a>
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script>
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                Hello World
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/yuqiao_headicon.jpeg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Yuqiao(Qiao) Zeng</strong>
+        <span>Jan 01, 2010</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+            <i class="material-icons" role="presentation">devices other</i>
+            <span class="visuallyhidden">devices other</span>
+        </button>
+        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+            <li class="mdl-menu__item">Read this article on other device</li>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACZUlEQVR42u3aMXLDMAwEQP//00mbIrLvQInSeFZVCoXhshCRA14/X/288PDw8PDw8PDwHsZ7xc/f9/9Z9O07yZr5bx2tg4eHh7eT9+FTe7CVI9L7jbbsfG94eHh4+3mzy+D9Jz6h5kcWrY+Hh4f3MF5bECeXEB4eHt5385JtJddAcgR4eHh4z+cV//AH201C2xZ/edaCh4eHF/NmDbA9P9/W38PDw8M7aeiqKG2Dgru9oi6fKcPDw8MLeHlEmw8EzIYJ2iC4HrrCw8PDO4nXRq6z+GBWrA8PBQ8PD+9iXtL4b4ODPYEvHh4e3l285IOev9MOAaw02IqsBQ8PD287L7kA2hhidoh4eHh4T+Plg6p5Wdw2uvIVDg8CDw8P72JeHpXOooEZvm3F4eHh4d3FW4kJ2uBgNhQbrYyHh4e3kZdvuo1026tiNqCAh4eHt5M3Gx7Ni+C8JbYymoCHh4e3n5dEDyvNqlm4cNrFgIeHh3cBrw1q2821V0hyBPW9h4eHh7fMy8Pc2ejq+6AhL7jz6wQPDw/vat6sAbYyGrVSxEftMTw8PLyLeW2I0MYNbZGdF9+He8DDw8PbwmvbXfmQwcrfGg4l4OHh4V3MWxl4OiuQPbn9hoeHh3cxr33yYanZweXjCHh4eHh38c6KA1bC37YlhoeHh/cE3splsF4o5xdDdFh4eHh4G3nthz7/fK9fOcVB4OHh4T2MlxfHbSMtb3F9iKHx8PDwHsxLYCvUfAgMDw8P7y5eO/A0G6uaFeg5FQ8PD28PbzbqlBfB+UDA7H08PDy8nbzve/Dw8PDw8PDw8B7w/AIZ1sRwZ+WjSgAAAABJRU5ErkJggg==">
+        </ul>
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/TEST/">TEST</a>
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Hello World&url=http://yuqiaozeng.club//2010/01/01/20100101/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Weibo
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Hello World&url=http://yuqiaozeng.club//2010/01/01/20100101/index.html&via=Yuqiao(Qiao) Zeng" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yuqiaozeng.club//2010/01/01/20100101/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yuqiaozeng.club//2010/01/01/20100101/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+    
+
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+
+
+
+
+
+
+    <!-- 使用 DISQUS_CLICK -->
+    <div id="disqus-comment">
+        <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+        .ripple-container {
+        }
+        .ripple-container .ripple{
+            background-color: rgba(255,255,255,0.4);
+            animation: ripple 2s forwards cubic-bezier(0, 0, 0.2, 1);
+        }
+        @keyframes ripple {
+            0% {
+                transform: scale(0);
+                opacity: 1;
+            }
+            80% {
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #50A0FC;
+            text-shadow: 0
+        }
+</style>
+	
+<!-- add data-ripple attribute -->
+<div class="btn_click_load"> 
+    <button class="disqus_click_btn">Read Comments (Be sure disq.us, disquscdn.com and disqus.com can load properly)</button>
+</div>
+	
+<script>
+    // add effect to elements
+    Array.prototype.forEach.call(document.querySelectorAll('[data-ripple]'), function(element){
+        // find all elements and attach effect
+        new RippleEffect(element); // element is instance of javascript element node
+    });
+</script>
+
+<script>
+    var disqus_config = function () {
+        this.page.url = 'http://yuqiaozeng.club/2010/01/01/20100101/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yuqiaozeng.club/2010/01/01/20100101/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//yuqiaozeng-club.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+  	
+
+    </div>
+    <style>
+        #disqus-comment{
+            background-color: #eee;
+            padding: 2pc;
+        }
+    </style>
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2016/05/26/20160525/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Newer
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     

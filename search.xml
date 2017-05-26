@@ -4,7 +4,7 @@
     
     <entry>
       <title><![CDATA[Starting My Blog]]></title>
-      <url>/2016/05/26/Starting-My-Blog/</url>
+      <url>/2016/05/26/20160525/</url>
       <content type="html"><![CDATA[<h2 id="Why-Starting-Blog"><a href="#Why-Starting-Blog" class="headerlink" title="Why Starting Blog?"></a>Why Starting Blog?</h2><p>Because of the request from the ETC that every student has to get a personal website, I have got something like this. The theme <a href="https://hexo.io/" target="_blank" rel="external">Material</a> is so elegant!<br>From today, I will formaly start writing my blog. Hope everything goes just fine.</p>
 ]]></content>
       
@@ -17,7 +17,9 @@
         
         <tags>
             
-            <tag> 杂谈 </tag>
+            <tag> ETC </tag>
+            
+            <tag> tittle-tattle </tag>
             
         </tags>
         
@@ -25,7 +27,7 @@
     
     <entry>
       <title><![CDATA[Hello World]]></title>
-      <url>/2010/01/01/hello-world/</url>
+      <url>/2010/01/01/20100101/</url>
       <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
@@ -58,7 +60,134 @@
     <entry>
       <title><![CDATA[PERSONAL INFORMATION]]></title>
       <url>/about/index.html</url>
-      <content type="html"><![CDATA[<p>这里是关于我个人的介绍，有空的时候会进行补充。</p>
+      <content type="html"><![CDATA[<h2 id="YUQIAO-ZENG"><a href="#YUQIAO-ZENG" class="headerlink" title="YUQIAO ZENG"></a>YUQIAO ZENG</h2><table>
+<thead>
+<tr>
+<th>CONTACT</th>
+<th>DETAIL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EMAIL</td>
+<td>gandalfzyq@gmail.com</td>
+</tr>
+<tr>
+<td>TEL</td>
+<td>(+86)18691465618</td>
+</tr>
+<tr>
+<td>BLOG</td>
+<td><a href="http://blog.yuqiaozeng.club/" target="_blank" rel="external">blog.yuqiaozeng.club</a></td>
+</tr>
+<tr>
+<td>ADDRESS</td>
+<td>5030 Centre Avenue, 15213</td>
+</tr>
+</tbody>
+</table>
+<h3 id="EDUCATION"><a href="#EDUCATION" class="headerlink" title="EDUCATION"></a>EDUCATION</h3><h4 id="CARNEGIE-MELLON-UNIVERSITY-PITTSBURGH-PA-USA"><a href="#CARNEGIE-MELLON-UNIVERSITY-PITTSBURGH-PA-USA" class="headerlink" title="CARNEGIE MELLON UNIVERSITY, PITTSBURGH, PA, USA"></a>CARNEGIE MELLON UNIVERSITY, PITTSBURGH, PA, USA</h4><p><em>Currently Enrolled</em></p>
+<ul>
+<li>Master of Entertainment Technology (MET) </li>
+</ul>
+<h4 id="FUDAN-UNIVERSITY-SHANGHAI-CHINA"><a href="#FUDAN-UNIVERSITY-SHANGHAI-CHINA" class="headerlink" title="FUDAN UNIVERSITY, SHANGHAI, CHINA"></a>FUDAN UNIVERSITY, SHANGHAI, CHINA</h4><p><em>Sept 2011 – Jul 2015</em></p>
+<ul>
+<li>Bachelor of Engineering in Software Engineering</li>
+<li>Overall GPA: 3.29/4.0 </li>
+<li>Major GPA: 3.58/4.0</li>
+<li>Fudan Excellent Student Scholarship (2011 - 2014)</li>
+<li>Outstanding Student Award (Top 4%), Shanghai, China</li>
+</ul>
+<h3 id="WORK-EXPERIENCE"><a href="#WORK-EXPERIENCE" class="headerlink" title="WORK EXPERIENCE"></a>WORK EXPERIENCE</h3><h4 id="Mayday-Works-Technology-Co-Ltd-Developer-amp-Designer"><a href="#Mayday-Works-Technology-Co-Ltd-Developer-amp-Designer" class="headerlink" title="Mayday Works Technology Co., Ltd. | Developer &amp; Designer"></a>Mayday Works Technology Co., Ltd. | Developer &amp; Designer</h4><p><em>Aug 2014 – Aug 2016</em></p>
+<ul>
+<li>Worked as the director of the design group.</li>
+<li>Designed various character storylines, action play and AI scripts for <em>Star Legend</em>, a strategy role-playing game downloadable from app store.</li>
+<li>Performed battle system design, game play design and game numerical design for <em>Kabaneri of the Iron Fortress</em>, a massive multiplayer online role-playing game (MMORPG).</li>
+<li>Gained incentive bonus for my leading contributions in the game management and planning phase.</li>
+</ul>
+<h4 id="NetEase-NASDAQ-NTES-Intern-Developer-amp-Designer"><a href="#NetEase-NASDAQ-NTES-Intern-Developer-amp-Designer" class="headerlink" title="NetEase (NASDAQ: NTES) | Intern Developer &amp; Designer"></a>NetEase (NASDAQ: NTES) | Intern Developer &amp; Designer</h4><p><em>Jul 2014 – Aug 2014</em></p>
+<ul>
+<li>Worked in a group of five to develop a game demo, which included many stages of mimic warfare.</li>
+<li>Involved in the design and implementation of the UI module and sound module.</li>
+<li>Received a return offer due to my excellent performance during internship.</li>
+</ul>
+<h3 id="GAME-PROJECTS"><a href="#GAME-PROJECTS" class="headerlink" title="GAME PROJECTS"></a>GAME PROJECTS</h3><h4 id="To-The-Light"><a href="#To-The-Light" class="headerlink" title="To The Light"></a>To The Light</h4><p><em>Jan.20, 2017 - Jan.21, 2017</em></p>
+<ul>
+<li>An innovative trial of making a game with no image.</li>
+<li>Worked as the leader of a small team participating in the Global Gam Jam.</li>
+<li>You can find the introduction of the game <a href="http://globalgamejam.org/2017/games/light" target="_blank" rel="external">here</a>.</li>
+</ul>
+<h4 id="Kabaneri-of-the-Iron-Fortress"><a href="#Kabaneri-of-the-Iron-Fortress" class="headerlink" title="Kabaneri of the Iron Fortress"></a>Kabaneri of the Iron Fortress</h4><p><em>Feb 2016 - Aug 2016</em></p>
+<ul>
+<li>A massive multiplayer online role-playing game (MMORPG).</li>
+<li>Worked as the director of the design team.</li>
+<li>Responsible for battle system design, game play design and game numerical design.</li>
+<li>You can get more information and download <a href="http://kbnrgame.gaeamobile.net" target="_blank" rel="external">here</a>.</li>
+</ul>
+<h4 id="Star-Legend"><a href="#Star-Legend" class="headerlink" title="Star Legend"></a>Star Legend</h4><p><em>Jul 2014 - Feb 2016</em></p>
+<ul>
+<li>A strategy role-playing game <a href="https://appsto.re/us/wZjPdb.i" target="_blank" rel="external">downloadable from app store</a>.</li>
+<li>Designed various character storylines, action play and AI scripts.</li>
+</ul>
+<h4 id="GPS-Controlled-Breakout-Game-on-Android-Platform"><a href="#GPS-Controlled-Breakout-Game-on-Android-Platform" class="headerlink" title="GPS Controlled Breakout Game on Android Platform"></a>GPS Controlled Breakout Game on Android Platform</h4><p><em>Feb 2014</em></p>
+<ul>
+<li>Participated in the development of a creative block breaker game with the object of the game being for the player to break as many blocks as they can.</li>
+<li>Utilized GPS positioning to control the position of the paddle. Enhanced gaming experience by incorporating our body movement into the game play phase.</li>
+</ul>
+<h3 id="ACADEMIC-PROJECTS"><a href="#ACADEMIC-PROJECTS" class="headerlink" title="ACADEMIC PROJECTS"></a>ACADEMIC PROJECTS</h3><h4 id="Hand-Gesture-Control-of-Virtual-Camera"><a href="#Hand-Gesture-Control-of-Virtual-Camera" class="headerlink" title="Hand Gesture Control of Virtual Camera"></a>Hand Gesture Control of Virtual Camera</h4><p><em>May 2013 – May 2014</em></p>
+<ul>
+<li>Controlled the movement of virtual camera in a 3D scene with leap motion.</li>
+<li>Implement auto navigation and autoturning interpolation system</li>
+<li>Gained in-depth knowledge and experience toward hand gesture control.</li>
+</ul>
+<h4 id="Optical-Character-Recognition-Software"><a href="#Optical-Character-Recognition-Software" class="headerlink" title="Optical Character Recognition Software"></a>Optical Character Recognition Software</h4><p><em>Dec 2013</em></p>
+<ul>
+<li>Developed character recognition software to identify the contents in blurred and slightly damaged pictures.</li>
+<li>Extracted the majority of letters and numbers from the blurred pictures with creative image processing technique.</li>
+</ul>
+<h4 id="Micro-Blog"><a href="#Micro-Blog" class="headerlink" title="Micro Blog"></a>Micro Blog</h4><p><em>Apr 2013 – Jun 2013</em></p>
+<ul>
+<li>Developed a micro blog website with a database that supports texts, photos, videos, emails and following functions.</li>
+<li>Enhanced my skills with database design and information management.</li>
+</ul>
+<h4 id="Smart-Clock-App-Development"><a href="#Smart-Clock-App-Development" class="headerlink" title="Smart Clock App Development"></a>Smart Clock App Development</h4><p><em>Jan 2012 – Mar 2012</em></p>
+<ul>
+<li>Came up with an innovative smart clock app that could generate alarms according to the curricula and contacts entered in the phone, and would notify the corresponding contact via a SMS as a reminder to wake up the user – if he or she failed to shut down the alarm.</li>
+<li>Obtained second prize in iShamrock Software Competition of Fudan University &amp; UCD.</li>
+</ul>
+<h3 id="EXTRACURRICULAR-ACTIVITIES"><a href="#EXTRACURRICULAR-ACTIVITIES" class="headerlink" title="EXTRACURRICULAR ACTIVITIES"></a>EXTRACURRICULAR ACTIVITIES</h3><h4 id="Newspaper-Reporter-for-School-Software-Journal"><a href="#Newspaper-Reporter-for-School-Software-Journal" class="headerlink" title="Newspaper Reporter for School Software Journal"></a>Newspaper Reporter for School Software Journal</h4><p><em>2012 – 2013</em></p>
+<ul>
+<li>Kept up with the pace of cutting-edge software technology and wrote software articles and reviews for<br>the journal in software department.</li>
+<li>Improved my ability to comprehend English articles and papers, especially in the software research and development area.</li>
+</ul>
+<h4 id="Coffee-Shop-Manager"><a href="#Coffee-Shop-Manager" class="headerlink" title="Coffee Shop Manager"></a>Coffee Shop Manager</h4><p><em>2011 - 2012</em></p>
+<ul>
+<li>Collaborated with my friends to start up a coffee shop in the neighborhood of my high school.</li>
+<li>Enhanced my management and communication skills through marketing activities and business<br>cooperation with local retailers.</li>
+</ul>
+<h4 id="Student-Union-Director-of-Enterprise-Department"><a href="#Student-Union-Director-of-Enterprise-Department" class="headerlink" title="Student Union Director of Enterprise Department"></a>Student Union Director of Enterprise Department</h4><p><em>2012 - 2013</em></p>
+<ul>
+<li>Invited many celebrities in the industry to give lectures on campus and to share their stories and life experiences, including the CEO from “Are you hungry” app – a famous app for take-out orders in China.</li>
+<li>Participated in the advertising, marketing and fundraising process of each activity, and ensured the<br>smooth operation of every event.</li>
+</ul>
+<h4 id="Volunteer-Activity"><a href="#Volunteer-Activity" class="headerlink" title="Volunteer Activity"></a>Volunteer Activity</h4><p><em>2011 – 2012</em></p>
+<ul>
+<li>Volunteered at Senior Center to take care of the elderly people for over a year (once a week, 3-4 hours<br>per visit).</li>
+<li>Assisted with math and English teachings for the mentally challenged children in our local community for half a year (once a week, 1-2 hours per visit), encouraged them to embrace life with great optimism.</li>
+</ul>
+<h3 id="SKILLS-amp-LANGUAGES"><a href="#SKILLS-amp-LANGUAGES" class="headerlink" title="SKILLS &amp; LANGUAGES"></a>SKILLS &amp; LANGUAGES</h3><ul>
+<li>Proficient with Java, C#; Familiar with Python, Lua, C++, NodeJS, SQL.</li>
+<li>Two years of experience in Mobile Game Design and Mobile Game Development.</li>
+<li>Skilled in Unity3d Development.</li>
+<li>Fluent in English, Native in Mandarin.</li>
+</ul>
+<h3 id="HOBBIES"><a href="#HOBBIES" class="headerlink" title="HOBBIES"></a>HOBBIES</h3><h4 id="Travalling"><a href="#Travalling" class="headerlink" title="Travalling"></a>Travalling</h4><ul>
+<li>Travelled to nearly 40 countries/regions including Antarctica, experienced and survived numerous rough living conditions in our great planet.</li>
+</ul>
+<h4 id="Photography-amp-Video-Clipping"><a href="#Photography-amp-Video-Clipping" class="headerlink" title="Photography &amp; Video Clipping"></a>Photography &amp; Video Clipping</h4><ul>
+<li>Demonstrated professional photographing and video clipping skills through assiduous practices and obtained fifth prize in the “Wiki Loves Monuments” photo contest in China. (2013)</li>
+<li>You can find more in my <a href="http://blog.yuqiaozeng.club/" target="_blank" rel="external">personal blog</a>.</li>
+</ul>
 ]]></content>
     </entry>
     
