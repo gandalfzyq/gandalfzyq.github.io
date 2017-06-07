@@ -153,12 +153,6 @@
   
     
     <entry>
-      <title><![CDATA[gallery]]></title>
-      <url>/gallery/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[PERSONAL INFORMATION]]></title>
       <url>/about/index.html</url>
       <content type="html"><![CDATA[<h2 id="YUQIAO-ZENG"><a href="#YUQIAO-ZENG" class="headerlink" title="YUQIAO ZENG"></a>YUQIAO ZENG</h2><table>
@@ -290,6 +284,12 @@
 <li>You can find more in my <a href="http://blog.yuqiaozeng.club/" target="_blank" rel="external">personal blog</a>.</li>
 </ul>
 ]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[gallery]]></title>
+      <url>/gallery/index.html</url>
+      <content type="html"></content>
     </entry>
     
   
