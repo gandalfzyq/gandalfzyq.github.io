@@ -89,9 +89,9 @@
         
         <tags>
             
-            <tag> Photography </tag>
-            
             <tag> tittle-tattle </tag>
+            
+            <tag> Photography </tag>
             
         </tags>
         
@@ -112,9 +112,9 @@
         
         <tags>
             
-            <tag> tittle-tattle </tag>
-            
             <tag> ETC </tag>
+            
+            <tag> tittle-tattle </tag>
             
         </tags>
         
@@ -151,6 +151,12 @@
     
   
   
+    
+    <entry>
+      <title><![CDATA[gallery]]></title>
+      <url>/gallery/index.html</url>
+      <content type="html"></content>
+    </entry>
     
     <entry>
       <title><![CDATA[PERSONAL INFORMATION]]></title>
@@ -284,12 +290,6 @@
 <li>You can find more in my <a href="http://blog.yuqiaozeng.club/" target="_blank" rel="external">personal blog</a>.</li>
 </ul>
 ]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[gallery]]></title>
-      <url>/gallery/index.html</url>
-      <content type="html"></content>
     </entry>
     
   
