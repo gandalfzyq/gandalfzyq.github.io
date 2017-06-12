@@ -3,6 +3,32 @@
   
     
     <entry>
+      <title><![CDATA[One Thing About Unity Time.deltaTime]]></title>
+      <url>/2017/06/13/20170612/</url>
+      <content type="html"><![CDATA[<h2 id="One-Thing-About-Unity-Time-deltaTime"><a href="#One-Thing-About-Unity-Time-deltaTime" class="headerlink" title="One Thing About Unity Time.deltaTime"></a>One Thing About Unity Time.deltaTime</h2><h3 id="How-to-Understand"><a href="#How-to-Understand" class="headerlink" title="How to Understand?"></a>How to Understand?</h3><p>For Time.deltaTime, there is only one thing that needed to be remembered. </p>
+<p><strong>The time in seconds it took to complete the last frame (Read Only).</strong></p>
+<h3 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h3><ul>
+<li>And When called from inside MonoBehaviour’s FixedUpdate, returns the fixed framerate delta time.</li>
+<li>OnGUI can be called multiple times per frame and deltaTime would hold the same value each call, until next frame where it would be updated again.</li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> Programming </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Programming </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Java Access Modifiers]]></title>
       <url>/2017/06/08/20170607/</url>
       <content type="html"><![CDATA[<h2 id="Java-Access-Modifiers"><a href="#Java-Access-Modifiers" class="headerlink" title="Java Access Modifiers"></a>Java Access Modifiers</h2><h3 id="Four-Access-Levels"><a href="#Four-Access-Levels" class="headerlink" title="Four Access Levels"></a>Four Access Levels</h3><p>For Java modifiers, the following table should be clear enough.</p>
@@ -153,12 +179,6 @@
   
     
     <entry>
-      <title><![CDATA[gallery]]></title>
-      <url>/gallery/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[PERSONAL INFORMATION]]></title>
       <url>/about/index.html</url>
       <content type="html"><![CDATA[<h2 id="YUQIAO-ZENG"><a href="#YUQIAO-ZENG" class="headerlink" title="YUQIAO ZENG"></a>YUQIAO ZENG</h2><table>
@@ -290,6 +310,12 @@
 <li>You can find more in my <a href="http://blog.yuqiaozeng.club/" target="_blank" rel="external">personal blog</a>.</li>
 </ul>
 ]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[gallery]]></title>
+      <url>/gallery/index.html</url>
+      <content type="html"></content>
     </entry>
     
   
