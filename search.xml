@@ -3,6 +3,45 @@
   
     
     <entry>
+      <title><![CDATA[Using WireShark to Analyze ARP]]></title>
+      <url>/2017/06/23/20170622/</url>
+      <content type="html"><![CDATA[<h2 id="Using-WireShark-to-Analyze-ARP"><a href="#Using-WireShark-to-Analyze-ARP" class="headerlink" title="Using WireShark to Analyze ARP"></a>Using WireShark to Analyze ARP</h2><p>For the safety reasons, I will hide all the MAC addresses.</p>
+<h3 id="ARP-Cache"><a href="#ARP-Cache" class="headerlink" title="ARP Cache"></a>ARP Cache</h3><p>On my Mac, using arp -a to show the ARP caches.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">YuqiaoZengs-MacBook-Air:~ yuqiaozeng$ arp -a</div><div class="line">? (192.168.199.1) at MY_ROUTER_ADDRESS on en0 ifscope [ethernet]</div><div class="line">? (224.0.0.251) at HIDE_MAC_ADDRESS on en0 ifscope permanent [ethernet]</div></pre></td></tr></table></figure>
+<p>In the above codes, <em>192.168.199.1</em> is the IP address of my router, and <em>MY_ROUTER_ADDRESS</em> is its MAC address. <em>224.0.0.251</em> is about Bonjour / mDNS requests which we will not talk about here. Since I use a router, all of my network requests have my route as the next hop.</p>
+<h3 id="Using-WireShark-to-Sniff-the-ARP-Request"><a href="#Using-WireShark-to-Sniff-the-ARP-Request" class="headerlink" title="Using WireShark to Sniff the ARP Request"></a>Using WireShark to Sniff the ARP Request</h3><p>Since the ARP cache will be valid for 20 minutes and on BSD systems they will be reset to 20 minutes every time they are accessed, we need to manually delete the record using arp -d hostname command, which needs the super user permission.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">YuqiaoZengs-MacBook-Air:~ yuqiaozeng$ sudo arp -d 192.168.199.1</div><div class="line">Password:</div><div class="line">192.168.199.1 (192.168.199.1) deleted</div></pre></td></tr></table></figure>
+<p>Since there is a lot of background process needs to access the Internet, the record for 192.168.199.1 will reappear nearly immediately after the deletion. And now we can go to WireShark to analyze the packets.</p>
+<h3 id="WireShark-ARP-Packets-Analyze"><a href="#WireShark-ARP-Packets-Analyze" class="headerlink" title="WireShark ARP Packets Analyze"></a>WireShark ARP Packets Analyze</h3><p>The struct of the ARP packet:</p>
+<p><img src="https://image.slidesharecdn.com/arpaddressresolutionprotocol-110519232546-phpapp01/95/arp-address-resolution-protocol-6-728.jpg?cb=1305847611" alt="ARP packet"></p>
+<p>The first two ARP packets are:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">4261	201.230420	Apple_ae:72:54	Broadcast	ARP	42	Who has 192.168.199.1? Tell 192.168.199.240</div><div class="line">4262	201.240078	Hiwifi_41:9c:48	Apple_ae:72:54	ARP	42	192.168.199.1 is at MY_ROUTER_ADDRESS</div></pre></td></tr></table></figure>
+<p>The total length of the first packet is 42 Bytes. The exact content of the first packet is: </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ff ff ff ff ff ff XX XX XX XX XX XX 08 06 00 01  </div><div class="line">08 00 06 04 00 01 XX XX XX XX XX XX c0 a8 c7 f0  </div><div class="line">00 00 00 00 00 00 c0 a8 c7 01</div></pre></td></tr></table></figure>
+<p>The first 6 Bytes are the address of broadcast which means tell all others that I need to get the MAC of the 192.168.199.1. Then XX XX XX XX XX XX is the MAC address of my Mac. Then the 08 06 means this frame is an ARP request. The 00 01 after is my hardware type, which is Hardware type: Ethernet (1). Then 08 00 means this is of IP type. Then 06 if the length of the hardware address, 04 is the length of the protocol. The 00 01 after means this is an ARP request, which is an opcode. Then again is my Mac’s MAC address. Then c0 a8 c7 f0 is the IP address of my Mac. Then 00 00 00 00 00 00 c0 a8 c7 01 are the MAC and IP addresses of the router. Note that the 00 00 00 00 00 00 will be filled by the router and send back.</p>
+<p>The exact content of the second packet is: </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">XX XX XX XX XX XX YY YY YY YY YY YY 08 06 00 01  </div><div class="line">08 00 06 04 00 02 YY YY YY YY YY YY c0 a8 c7 01  </div><div class="line">XX XX XX XX XX XX c0 a8 c7 f0</div></pre></td></tr></table></figure>
+<p>For the second packet, much of the meanings are obvious. But the opcode is 00 02, which means this is an ARP reply. And YY YY YY YY YY YY is the MAC address of my router.</p>
+]]></content>
+      
+        <categories>
+            
+            <category> Network </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Programming </tag>
+            
+            <tag> TCP/IP </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[One Thing About Unity Time.deltaTime]]></title>
       <url>/2017/06/13/20170612/</url>
       <content type="html"><![CDATA[<h2 id="One-Thing-About-Unity-Time-deltaTime"><a href="#One-Thing-About-Unity-Time-deltaTime" class="headerlink" title="One Thing About Unity Time.deltaTime"></a>One Thing About Unity Time.deltaTime</h2><h3 id="How-to-Understand"><a href="#How-to-Understand" class="headerlink" title="How to Understand?"></a>How to Understand?</h3><p>For Time.deltaTime, there is only one thing that needed to be remembered. </p>
@@ -23,6 +62,8 @@
         <tags>
             
             <tag> Programming </tag>
+            
+            <tag> Unity </tag>
             
         </tags>
         
@@ -115,9 +156,9 @@
         
         <tags>
             
-            <tag> tittle-tattle </tag>
-            
             <tag> Photography </tag>
+            
+            <tag> tittle-tattle </tag>
             
         </tags>
         
@@ -138,9 +179,9 @@
         
         <tags>
             
-            <tag> ETC </tag>
-            
             <tag> tittle-tattle </tag>
+            
+            <tag> ETC </tag>
             
         </tags>
         
